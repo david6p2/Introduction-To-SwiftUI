@@ -94,15 +94,15 @@ SwiftUI manage the dependency that a View have to it's Data and how to keep it i
 
 ### Add a Store
 
-- [ ] Let's modify the model so the sandwiches can change over time. Drag the prebuild SandwichStore
-- [ ] the SandwichStore is a mutable object that contains the sandwiches and a singleton instance for testing
-- [ ] Let's make this class conforms to the `ObservableObject` protocol
-- [ ] Mark the properties that you want to observe with `@Published` like `@Published var sandwiches: [Sandwich]`
-- [ ] In ContentView add the `@StateObject private var store = SandwichStore()` to use the new model. It will obeserve the object to update the view when it changes.
-- [ ] Lets move that to the App code in SandwichesApp.swift before the body and pass it to the view code when the ContentView is created like: `ContentView(store: store)` 
-- [ ] And back in the ContentView code, replace the `var sandwiches` with `var store: SandwichStore` and prepend  `@ObservedObject` 
-- [ ] Update the code to take the sandwiches from the Text("\\(store.sandwiches.count) Sandwiches")
-- [ ] Also update the preview to use the Store like `ContentView(store: testStore)`
+- [x] Let's modify the model so the sandwiches can change over time. Drag the prebuild SandwichStore
+- [x] the SandwichStore is a mutable object that contains the sandwiches and a singleton instance for testing
+- [x] Let's make this class conforms to the `ObservableObject` protocol
+- [x] Mark the properties that you want to observe with `@Published` like `@Published var sandwiches: [Sandwich]`
+- [x] In ContentView add the `@StateObject private var store = SandwichStore()` to use the new model. It will obeserve the object to update the view when it changes.
+- [x] Lets move that to the App code in SandwichesApp.swift before the body and pass it to the view code when the ContentView is created like: `ContentView(store: store)` 
+- [x] And back in the ContentView code, replace the `var sandwiches` with `var store: SandwichStore` and prepend  `@ObservedObject` 
+- [x] Update the code to take the sandwiches from the store in the `ForEach` and `Text("\\(store.sandwiches.count) Sandwiches")` 
+- [x] Also update the preview to use the Store like `ContentView(store: testStore)`
 
 ### Add the Edit list feature
 
