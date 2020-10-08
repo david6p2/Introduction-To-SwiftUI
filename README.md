@@ -106,25 +106,25 @@ SwiftUI manage the dependency that a View have to it's Data and how to keep it i
 
 ### Add the Edit list feature
 
-- [ ] Create the funds `makeSandwich()`, `moveSandwiches(from: IndexSet, to: Int)`, `deleteSandwiches(offsets: IndexSet)` 
+- [x] Create the funds `makeSandwich()`, `moveSandwiches(from: IndexSet, to: Int)`, `deleteSandwiches(offsets: IndexSet)` 
 
-  - [ ] `func makeSandwich() { withAnimation { store.sandwiches.append(Sandwich(name: "Patty melt", ingredientCount: 3)) } }`
-  - [ ] `func moveSandwiches(from: IndexSet, to: Int) { withAnimation { store.sandwiches.move(fromOffsets: from, toOffset: to) } }`
-  - [ ] `func deleteSandwiches(offsets: IndexSet) { withAnimation { store.sandwiches.remove(atOffsets: from) } }`
+  - [x] `func makeSandwich() { withAnimation { store.sandwiches.append(Sandwich(name: "Patty melt", ingredientCount: 3)) } }`
+  - [x] `func moveSandwiches(from: IndexSet, to: Int) { withAnimation { store.sandwiches.move(fromOffsets: from, toOffset: to) } }`
+  - [x] `func deleteSandwiches(offsets: IndexSet) { withAnimation { store.sandwiches.remove(atOffsets: offsets) } }`
 
-- [ ] After the ForEach in line 11, add at the end (line 14 aprox) a `.onMove(perform: moveSandwiches)`
+- [x] After the ForEach in line 11, add at the end (line 14 aprox) a `.onMove(perform: moveSandwiches)`
 
-- [ ] and also `.onDelete(perform: deleteSandwiches)`
+- [x] and also `.onDelete(perform: deleteSandwiches)`
 
-- [ ] Now we can swap to delete. This works on MacOS. Let's make it work better to iOS
+- [x] Now we can swap to delete. This works on MacOS. Let's make it work better to iOS
 
-- [ ] Let's add a edit button as a toolbar item in line 25 aprox after the `navigationTitle` like `.toolbar { EditButton() }` 
+- [x] Let's add a edit button as a toolbar item in line 25 aprox after the `navigationTitle` like `.toolbar { EditButton() }` 
 
-- [ ] Wrap it arround #if os(iOS) #endif
+- [x] Wrap the EditButton arround #if os(iOS) #endif
 
-- [ ] Now lets add the Add button under the #endif clause like `Button("Add", action: makeSandwich)` 
+- [x] Now let's add the Add button under the #endif clause like `Button("Add", action: makeSandwich)` 
 
-- [ ] the `makeSandwich()` func should be `withAnimation { store.sandwiches.append(Sandwich(name: "Patty melt", ingredientCount: 3)) }`
+- [x] the `makeSandwich()` func should be `withAnimation { store.sandwiches.append(Sandwich(name: "Patty melt", ingredientCount: 3)) }`
 
   
 
