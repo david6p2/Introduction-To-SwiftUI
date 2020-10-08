@@ -63,13 +63,13 @@ We can clasify each property as state variable or derived value. Zoom State valu
 
 *Data Essentials in SwiftUI
 
-SwiftUI manage the dependency that a View have to it's Data and how to keep it in sync. Many bugas are solved by collecting all the view updates into a single method. That is define a source of truth. SwiftUI was done taking into account this best practice, by making "body" the only entry point thats ever called.
+SwiftUI manage the dependency that a View have to it's Data and how to keep it in sync. Many bugs are solved by collecting all the view updates into a single method. That is define a source of truth. SwiftUI was done taking into account this best practice, by making "body" the only entry point thats ever called.
 
-- [ ] create a `@State ` variable called `zoomed` and set it to false by default. States should only be accessible inside the View's implementation, so should be **private** 
-- [ ] Use `zoomed` in the `.aspectRatio(contentMeode: zoomed ? .fill : .fit)` 
-- [ ] Then add a `onTapGesture` that toggle zoomed state like `zoomed.toggle()` 
-- [ ] Fix the bottom white space of the safe area by adding at the end of the image a modifier from the library called `Edges Ignoring Safe Area` for the `.bottom` edge.
-- [ ] Add an animationg to the zoom of the image by wraping the `zoomed.toggle()` inside a `withAnimation` 
+- [x] create a `@State ` variable called `zoomed` and set it to false by default. States should only be accessible inside the View's implementation, so should be **private** 
+- [x] Use `zoomed` in the `.aspectRatio(contentMode: zoomed ? .fill : .fit)` 
+- [x] Then add a `onTapGesture` that toggle zoomed state like `zoomed.toggle()` 
+- [x] Fix the bottom white space of the safe area by adding at the end of the image a modifier from the library called `Edges Ignoring Safe Area` for the `.bottom` edge.
+- [x] Add an animationg to the zoom of the image by wraping the `zoomed.toggle()` inside a `withAnimation` block
 
 ### Spicy Sandwiches
 

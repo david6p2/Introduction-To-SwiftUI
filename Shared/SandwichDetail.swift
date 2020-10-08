@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct SandwichDetail: View {
+    @State private var zoomed = false
     var sandwich: Sandwich
     var body: some View {
         Image(sandwich.name)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: zoomed ? .fill : .fit)
+            .onTapGesture {
+                withAnimation {
+                    zoomed.toggle()
+                }
+            }
+            .edgesIgnoringSafeArea(.bottom)
             .navigationTitle(sandwich.name)
     }
 }
