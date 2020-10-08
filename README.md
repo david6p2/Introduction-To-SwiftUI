@@ -2,28 +2,29 @@
 
 This is a project of the App from  `Introduction to SwiftUI` talk from the WWDC20 with most of the steps to recreate it.
 
-- [ ] New Project, Multiplatform, Sandwiches
-- [ ] We have Group for iOS and MacOS
-- [ ] Go to ContentView
-- [ ] We have the preview
-- [ ] Selection is shown in the canvas and also changes
-- [ ] Create the Cell for the sandwiches
-- [ ] Add piece of text from the library and show what happen in different locations
-- [ ] They were embeded in a VStack
-- [ ] First Text = My Sandwich
-- [ ] Second Text = 3 Ingredients
-- [ ] CMD + Click on Stack and select embed on HStack to add an image
-- [ ] add an Image(systemName: "photo") on top of the Stack
-- [ ] CMD + Click on the VStack to change the properties with the SwiftUI Inspector, align left and see the code added
-- [ ] Inspect the ingredients now using the canvas and change the font to Subheadline and see the code. These are modifiers
-- [ ] Now in code set the foreground color to a .secondary color.
-- [ ] Now put the cel into a list. CMD + Click the HStack and "embed in List". No delegates or data sources.
-- [ ] Let's hook it up to some data. Drag the Model assets to the project.
-- [ ] The model have a few fields. I just need to make the type identifiable to use is in SwiftUI. You should have a property called id, and some test Data if you want
-- [ ] Go back to the view and add a property called var sandwiches: [Sandwich] = []
-- [ ] Pass the test data to the ContentView in the PREVIEW and also to the Code in line 9 like: List(sandwiches) { sandwich in } and make the text show `sandwich.name` and next text show `sandwich.ingredientCount`
-- [ ] Also change the Image to be `Image(sandwich.thumbnailName)` and see how the size changes
-- [ ] Bring a corner radius modifier from the Library and apply it to the images with a value of 8
+- [x] New Project, Multiplatform, Sandwiches
+- [x] We have Group for iOS and MacOS
+- [x] Go to ContentView
+- [x] We have the preview
+- [x] Selection is shown in the canvas and also changes
+- [x] Create the Cell for the sandwiches
+- [x] Add piece of text from the library and show what happen in different locations
+- [x] They were embeded in a VStack
+- [x] First Text = My Sandwich
+- [x] Second Text = 3 Ingredients
+- [x] CMD + Click on Stack and select embed on HStack to add an image
+- [x] add an Image(systemName: "photo") on top of the Stack
+- [x] CMD + Click on the VStack to change the properties with the SwiftUI Inspector, align left and see the code added
+- [x] Inspect the ingredients now using the canvas (Control+Option+Click) and change the font to Subheadline and see the code. These are modifiers
+- [x] Now in code set the foreground color to a .secondary color.
+- [x] Now put the cel into a list. CMD + Click the HStack and "embed in List". No delegates or data sources.
+- [x] Let's hook it up to some data. Drag the Model assets to the project.
+- [x] The model have a few fields. I just need to make the type identifiable to use it in SwiftUI. You should have a property called id, and some test Data if you want.
+- [x] Go back to the view and add a property called var sandwiches: [Sandwich] = []
+- [x] Pass the test data to the ContentView in the PREVIEW and also to the Code in line 9 like: List(sandwiches) { sandwich in } and make the text show `sandwich.name` and next text show `sandwich.ingredientCount` like `Text("\(sandwich.ingredientCount) ingredients")` 
+- [x] Also change the Image to be `Image(sandwich.thumbnailName)` and see how the size changes
+- [x] Bring a corner radius modifier from the Library and apply it to the images with a value of 8
+- [x] May also need to add `.resizable()` ` .aspectRatio(contentMode: .fit)` and `.frame(width: 50, height: 50)` if the Images have different sizes.
 
 ### Show the Detail
 

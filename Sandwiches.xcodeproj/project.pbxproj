@@ -13,6 +13,10 @@
 		FB15B630252F6150008612E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15B61B252F614E008612E0 /* ContentView.swift */; };
 		FB15B631252F6150008612E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15B61C252F6150008612E0 /* Assets.xcassets */; };
 		FB15B632252F6150008612E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15B61C252F6150008612E0 /* Assets.xcassets */; };
+		FB450F9D252F7DEA00D5FFB0 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450F9B252F7DEA00D5FFB0 /* Sandwich.swift */; };
+		FB450F9E252F7DEA00D5FFB0 /* Sandwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450F9B252F7DEA00D5FFB0 /* Sandwich.swift */; };
+		FB450F9F252F7DEA00D5FFB0 /* Sandwiches.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB450F9C252F7DEA00D5FFB0 /* Sandwiches.xcassets */; };
+		FB450FA0252F7DEA00D5FFB0 /* Sandwiches.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB450F9C252F7DEA00D5FFB0 /* Sandwiches.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		FB15B629252F6150008612E0 /* Sandwiches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandwiches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB15B62B252F6150008612E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB15B62C252F6150008612E0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FB450F9B252F7DEA00D5FFB0 /* Sandwich.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandwich.swift; sourceTree = "<group>"; };
+		FB450F9C252F7DEA00D5FFB0 /* Sandwiches.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sandwiches.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				FB15B61A252F614E008612E0 /* SandwichesApp.swift */,
 				FB15B61B252F614E008612E0 /* ContentView.swift */,
+				FB450F9B252F7DEA00D5FFB0 /* Sandwich.swift */,
+				FB450F9C252F7DEA00D5FFB0 /* Sandwiches.xcassets */,
 				FB15B61C252F6150008612E0 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -168,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB450F9F252F7DEA00D5FFB0 /* Sandwiches.xcassets in Resources */,
 				FB15B631252F6150008612E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB450FA0252F7DEA00D5FFB0 /* Sandwiches.xcassets in Resources */,
 				FB15B632252F6150008612E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +199,7 @@
 			files = (
 				FB15B62F252F6150008612E0 /* ContentView.swift in Sources */,
 				FB15B62D252F6150008612E0 /* SandwichesApp.swift in Sources */,
+				FB450F9D252F7DEA00D5FFB0 /* Sandwich.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +209,7 @@
 			files = (
 				FB15B630252F6150008612E0 /* ContentView.swift in Sources */,
 				FB15B62E252F6150008612E0 /* SandwichesApp.swift in Sources */,
+				FB450F9E252F7DEA00D5FFB0 /* Sandwich.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
