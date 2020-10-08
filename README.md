@@ -73,19 +73,19 @@ SwiftUI manage the dependency that a View have to it's Data and how to keep it i
 
 ### Spicy Sandwiches
 
-- [ ] Wrap the Image in a VStack, and let the more general modifiers apply to the VStack, like `.navigationTitle` and `edgesIgnoringSafeArea` 
-- [ ] Then add a `Label` under the image but inside the VStack, with Title = "Spicy" and systemImage: "flame.fill" 
-- [ ] To move the Spacy label to the bottom, add a spacer between the Image and the Label
-- [ ] and to center the image again, add a spacer above the Image with `minLenght: 0`  for both spacers.
-- [ ] Add padding to the Label by opening it's inspector and setting the padding `all` around and turn up the font size by adding the `Font` modifier and setting it to `.headline`.
-- [ ] Then add a background mofier to the Label of red color
-- [ ] To expand the label edge to edge, add an HStack and Spacers, with all other modifiers applying to the HStack an not the Label
-- [ ] Change the `foregroundColor(.yellow)` for the Label HStack
-- [ ] and modify font to use smallCaps like `font(Font.headline.smallCaps())`
-- [ ] Now make it appear only if the Sandwich is Spicy by adding an `if sandwich.isSpicy` statement before the Label HStack
-- [ ] Click the + Button in the preview to add another preview and compare between a Spicy and not spicy sandwich
-- [ ] Remove the Spicy banner when image is zoomed by adding the `!zoomed` condition to the `if` statement
-- [ ] add a transition to the ende of the HStack modifiers like `.transition(.move(edge: .bottom))` to animate the Spicy banner going away
+- [x] Wrap the Image in a VStack, and let the more general modifiers apply to the VStack, like `.navigationTitle` and `edgesIgnoringSafeArea` 
+- [x] Then add a `Label` under the image but inside the VStack, with Title = "Spicy" and systemImage: "flame.fill" 
+- [x] To move the Spacy label to the bottom, add a spacer between the Image and the Label
+- [x] and to center the image again, add a spacer above the Image with `minLenght: 0`  for both spacers.
+- [x] Add padding to the Label by opening it's inspector and setting the padding `all` around and turn up the font size by adding the `Font` modifier and setting it to `.headline`.
+- [x] Then add a background mofier to the Label of red color like `.background(Color.red)` 
+- [x] To expand the label edge to edge, add an HStack and Spacers, with all other modifiers applying to the HStack an not the Label
+- [x] Change the `foregroundColor(.yellow)` for the Label HStack
+- [x] and modify font to use smallCaps like `font(Font.headline.smallCaps())`
+- [x] Now make it appear only if the Sandwich is Spicy by adding an `if sandwich.isSpicy` statement before the Label HStack
+- [x] Click the + Button in the preview to add another preview and compare between a Spicy and not spicy sandwich
+- [x] Remove the Spicy banner when image is zoomed by adding the `!zoomed` condition to the `if` statement
+- [x] add a transition to the end of the HStack modifiers like `.transition(.move(edge: .bottom))` to animate the Spicy banner going away
 
 ### Multiplatform Tweaks
 
