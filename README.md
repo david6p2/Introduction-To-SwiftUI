@@ -130,8 +130,8 @@ SwiftUI manage the dependency that a View have to it's Data and how to keep it i
 
   ### Changing previews  Dynamic Type and Color Scheme to Dark mode
 
-- [ ] Create a new preview and set it to be in dark mode
-- [ ] Click inspect to configure the new preview, change the Dynamic Type size to be ExtraExtra and look at the code that was added to generate the preview. It sets the environment of the previews. A way you can set contextual info about your views that flows down the view hierarchy and changes aspects of any contained views at once. Great for making cascading changes to a view and its children.
-- [ ] Add another preview with Dark mode for the color scheme
-- [ ] set the `.environment(\.layoutDirection, .rightToLeft)` 
-- [ ] set the locale `.environment(\.locale, .Locale(identifier: "ar"))`. It automatically, localize Strings and also string interpolations
+- [x] Create a new preview and set it to be in dark mode
+- [x] Click inspect to configure the new preview, change the Dynamic Type size to be ExtraExtra and look at the code that was added to generate the preview. It sets the environment of the previews. A way you can set contextual info about your views that flows down the view hierarchy and changes aspects of any contained views at once. Great for making cascading changes to a view and its children.
+- [x] Add another preview with Dark mode for the color scheme
+- [x] set the `.environment(\.layoutDirection, .rightToLeft)` 
+- [x] set the locale `.environment(\.locale, .Locale(identifier: "ar"))`. It automatically, localize Strings and also string interpolations

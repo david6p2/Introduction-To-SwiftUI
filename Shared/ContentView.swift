@@ -56,7 +56,16 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: testStore)
+        Group {
+            ContentView(store: testStore)
+            ContentView(store: testStore)
+                .environment(\.sizeCategory, .extraExtraLarge)
+            ContentView(store: testStore)
+                .preferredColorScheme(.dark)
+                .environment(\.sizeCategory, .extraExtraLarge)
+                .environment(\.layoutDirection, .rightToLeft)
+                .environment(\.locale, Locale(identifier: "ar"))
+        }
     }
 }
 
