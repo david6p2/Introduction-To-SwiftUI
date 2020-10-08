@@ -89,8 +89,8 @@ SwiftUI manage the dependency that a View have to it's Data and how to keep it i
 
 ### Multiplatform Tweaks
 
-- [ ] For iPad I have a splitView with a blank area when no Sandwich is selected. Let's add a view to the NavigationView of the ContentView file. Like `Text("Select a sandwich").font(.largeTitle)` 
-- [ ] For MacOS we see the same behaviour
+- [x] For iPad I have a splitView with a blank area when no Sandwich is selected. Let's add a view to the NavigationView of the ContentView file. Like `Text("Select a sandwich").font(.largeTitle)` 
+- [x] For MacOS we see the same behaviour
 
 ### Add a Store
 
