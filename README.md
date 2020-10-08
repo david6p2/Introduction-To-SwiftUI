@@ -38,15 +38,15 @@ This is a project of the App from  `Introduction to SwiftUI` talk from the WWDC2
 
 ### Detail View
 
-- [ ] Create a new SwiftUI View Called SandwichDetail. Xcode automatically create the View Struct and the preview
-- [ ] Create the sandwich as an input. So a property should be added
-- [ ] make the preview use the testData with the Sandwich at position 0
-- [ ] Now to build the view, let's adda an Image with the sandwich's image name: `Image(sandwich.name)`
-- [ ] Look in the library for a Image Rezible modifier and apply it to the image
-- [ ] Set the aspect ratio with another modifier, with `.fit` content mode
-- [ ] Now let's go back to the list to push the new DetailView. So in the NavigationLink, let's pass the SandwichDetail view with the current sandwich instead of the previews text we had and click play in the preview to test it works
-- [ ] I forgot to set the title in the detail. So add it next to the aspectRatio modifier like `.navigationTitle(sandwich.name)`
-- [ ] Make the SandwichDetail in the preview be inside a NavigationView so we can see the title
+- [x] Create a new SwiftUI View Called SandwichDetail. Xcode automatically create the View Struct and the preview
+- [x] Create the sandwich as an input. So a property should be added
+- [x] make the preview use the testData with the Sandwich at position 0
+- [x] Now to build the view, let's add an Image with the sandwich's image name: `Image(sandwich.name)`
+- [x] Look in the library for a Image Rezible modifier and apply it to the image
+- [x] Set the aspect ratio with another modifier, with `.fit` content mode
+- [x] Now let's go back to the list to push the new DetailView. So in the NavigationLink, let's pass the SandwichDetail view with the current sandwich instead of the previews text we had and click play in the preview to test it works
+- [x] I forgot to set the title in the detail. So add it next to the aspectRatio modifier like `.navigationTitle(sandwich.name)`
+- [x] Make the SandwichDetail in the preview be inside a NavigationView so we can see the title
 
 ### Zoom in and out the Image
 
