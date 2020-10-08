@@ -28,13 +28,13 @@ This is a project of the App from  `Introduction to SwiftUI` talk from the WWDC2
 
 ### Show the Detail
 
-- [ ] Wrap the List in a `NavigationView` and add the navigationTitle("Sandwiches")` at the Bottom of the List. The NavigationView allow us to move/push another view
-- [ ] To push another View when the cell is pressed we have to add a `NavigationLink(destination: Text(sandwich.name)` wraping the image and the VStack. This will update the UI automatically and you will see the detail indicators
-- [ ] Hit play in the preview and verify the cell behaves correctly. Check that the cell unhighlights automatically when we swipe from detail back to the list
-- [ ] Let's refactor the cell out to have separation of concerns. CMD + Click the NavigationLink and choose extract subview and call it SandwichCell
-- [ ] Add a property for the sandwich in the new SandwichCell and pass the sandwich as a parameter
-- [ ] Now let's add the row with the number of Sandwiches. SwiftUI let me combine data driven list with dynamic and static content. So let's add a ForEach sandwiches and inside put the SandwichCell init
-- [ ] Below the ForEach let's add a Text() with the Sandwiches count, a foregroundColor(.secondary) and alignment center by embeding it on a HStack and adding spacers
+- [x] Wrap the List in a `NavigationView` and add the `.navigationTitle("Sandwiches")` at the Bottom of the List. The NavigationView allow us to move/push another view
+- [x] To push another View when the cell is pressed we have to add a `NavigationLink(destination: Text(sandwich.name)` wraping the image and the VStack. This will update the UI automatically and you will see the detail indicators
+- [x] Hit play in the preview and verify the cell behaves correctly. Check that the cell unhighlights automatically when we swipe from detail back to the list
+- [x] Let's refactor the cell out to have separation of concerns. CMD + Click the NavigationLink and choose extract subview and call it SandwichCell
+- [x] Add a property for the sandwich in the new SandwichCell and pass the sandwich as a parameter
+- [x] Now let's add the row with the number of Sandwiches. SwiftUI let me combine data driven list with dynamic and static content. So let's  remove the `sandwiches`  parameter when creating the List and instead add a ForEach sandwiches inside the List like `ForEach(sandwiches) { sandwich in }` and inside put the SandwichCell init
+- [x] Below the ForEach let's add a Text() with the Sandwiches count, a foregroundColor(.secondary) and alignment center by embeding it on a HStack and adding spacers
 
 ### Detail View
 
